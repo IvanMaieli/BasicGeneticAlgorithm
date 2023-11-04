@@ -13,4 +13,9 @@ public class GeneticAlgorithm {
         this.crossoverRate = crossoverRate;
         this.elitismCount = elitismCount;
     }
+
+    public Population initPopulation(int chromosomeLenght) {
+        Population population = new Population(this.populationSize, chromosomeLenght);
+        return population;
+    }
 }

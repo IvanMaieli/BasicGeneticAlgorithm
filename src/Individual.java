@@ -22,23 +22,23 @@ public class Individual {
     }
 
     public int getChromosomeLenght() {
-        return chromosome.length;
+        return this.chromosome.length;
     }
 
     public int[] getChromosome() {
-        return chromosome;
+        return this.chromosome;
     }
 
     public double getFitness() {
-        return fitness;
-    }
-
-    public int getGene(int offset) {
-        return this.chromosome[offset];
+        return this.fitness;
     }
 
     public void setFitness(double fitness) {
         this.fitness = fitness;
+    }
+
+    public int getGene(int offset) {
+        return this.chromosome[offset];
     }
 
     public void setGene(int offset, int gene) {
